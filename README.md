@@ -62,6 +62,7 @@ Not every skill applies to every site — most are alternatives to each other or
 | [`pricing-page-design`](web-design/pricing-page-design/SKILL.md) | A pricing page |
 | [`consistent-brand-logo-row`](web-design/consistent-brand-logo-row/SKILL.md) | A trust strip / "as seen in" / integrations row |
 | [`progress-line-scroll-story`](web-design/progress-line-scroll-story/SKILL.md) | Turning an ordered process (onboarding, roadmap, steps) into a scroll timeline |
+| [`scroll-narrative-world`](web-design/scroll-narrative-world/SKILL.md) | Turning a long-form article, case study, or brand story into one continuous scroll journey (video, 3D world, or data/type — pick one renderer) |
 
 **Structural building blocks — nearly every full site needs these**
 | Skill | For |
@@ -79,11 +80,18 @@ Not every skill applies to every site — most are alternatives to each other or
 | [`bracket-frame-grid`](web-design/bracket-frame-grid/SKILL.md) | Technical/editorial framed-grid layout |
 | [`full-bleed-image-grid`](web-design/full-bleed-image-grid/SKILL.md) | Cinematic image-led layout instead |
 
+**3D / WebGL — decide the direction, then build it**
+| Skill | For |
+|---|---|
+| [`webgl-hero-direction`](web-design/webgl-hero-direction/SKILL.md) | Deciding *whether and what kind* of WebGL hero fits the brand goal, before writing any shader code — run this first |
+| [`threejs-scene-fundamentals`](web-design/threejs-scene-fundamentals/SKILL.md) | Building the scene once that decision is made — the scene/camera/renderer mental model, cleanup, and the mistakes that leak memory or melt mobile GPUs |
+
 **Situational — used only where that specific effect is wanted**
 | Skill | Effect |
 |---|---|
 | [`scroll-reveal-intersection-observer`](web-design/scroll-reveal-intersection-observer/SKILL.md) | Plain CSS/JS fade-in-on-scroll, no library |
 | [`gsap-motion-timelines`](web-design/gsap-motion-timelines/SKILL.md) | Orchestrated sequences, scroll-driven sections (needs GSAP) |
+| [`cinematic-scroll-anatomy`](web-design/cinematic-scroll-anatomy/SKILL.md) | Full page-level cinematic scroll choreography — preloader, sticky card stacks, pinned/scrubbed scenes (builds on `gsap-motion-timelines`) |
 | [`word-by-word-reveal`](web-design/word-by-word-reveal/SKILL.md) | Restrained word-by-word text entrance |
 | [`overflow-mask-word-reveal`](web-design/overflow-mask-word-reveal/SKILL.md) | Sharper "rising through a slit" text entrance (needs GSAP) |
 | [`cursor-spotlight-reveal`](web-design/cursor-spotlight-reveal/SKILL.md) | Cursor-following before/after or x-ray image reveal |
@@ -105,5 +113,10 @@ Not every skill applies to every site — most are alternatives to each other or
 
 1. Run `site-build-kickoff` first — it walks through the brief, page inventory, and produces a plan of which skills below apply where.
 2. Within that: `spec-driven-ui-prompting` locks the design brief once; pick one visual theme and one structural layout from the "pick ONE" group as the site-wide system.
-3. Build each page (and the shared header/footer/forms/loading states) by describing what's needed in plain language; the matching 1-3 skills get pulled in automatically.
-4. Layer in situational polish (borders, shadows, blur) once structure and content are locked, not before.
+3. If the brief actually calls for a WebGL/3D moment, run `webgl-hero-direction` to choose the direction before `threejs-scene-fundamentals` gets used to build it — don't reach for either by default.
+4. Build each page (and the shared header/footer/forms/loading states) by describing what's needed in plain language; the matching 1–3 skills get pulled in automatically.
+5. Layer in situational polish (borders, shadows, blur, cinematic scroll choreography) once structure and content are locked, not before.
+
+## Credits
+
+Several of these skills started as adaptations of [MengTo/Skills](https://github.com/MengTo/Skills) (MIT licensed) and were rewritten/reorganized for this library. See [LICENSE](LICENSE).
