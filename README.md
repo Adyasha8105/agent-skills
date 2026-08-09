@@ -43,6 +43,11 @@ done
 
 Not every skill applies to every site — most are alternatives to each other or situational, not a checklist to run end to end.
 
+**Start here, for a from-scratch build**
+| Skill | For |
+|---|---|
+| [`site-build-kickoff`](web-design/site-build-kickoff/SKILL.md) | The entry point — walks through the brief, page inventory, and which skills below apply where, producing a plan before any screen gets generated |
+
 **Foundation — used constantly across every page**
 | Skill | For |
 |---|---|
@@ -57,6 +62,14 @@ Not every skill applies to every site — most are alternatives to each other or
 | [`pricing-page-design`](web-design/pricing-page-design/SKILL.md) | A pricing page |
 | [`consistent-brand-logo-row`](web-design/consistent-brand-logo-row/SKILL.md) | A trust strip / "as seen in" / integrations row |
 | [`progress-line-scroll-story`](web-design/progress-line-scroll-story/SKILL.md) | Turning an ordered process (onboarding, roadmap, steps) into a scroll timeline |
+
+**Structural building blocks — nearly every full site needs these**
+| Skill | For |
+|---|---|
+| [`responsive-nav-header`](web-design/responsive-nav-header/SKILL.md) | The primary nav header and its accessible mobile-menu collapse |
+| [`site-footer-pattern`](web-design/site-footer-pattern/SKILL.md) | The footer — link groups, legal row, where a newsletter/social actually belongs |
+| [`form-input-states`](web-design/form-input-states/SKILL.md) | Form fields — all visual states, validation timing, accessible error announcement |
+| [`loading-empty-states`](web-design/loading-empty-states/SKILL.md) | Skeletons vs. spinners, and what a real empty state needs beyond "no data" |
 
 **Pick ONE — competing directions, not a stack**
 | Skill | Direction |
@@ -90,7 +103,7 @@ Not every skill applies to every site — most are alternatives to each other or
 
 ## A realistic build order
 
-1. Run `spec-driven-ui-prompting` once to lock the design brief (colors, type, layout language).
-2. Pick one visual theme and one structural layout from the "pick ONE" groups above — that becomes the site-wide system.
-3. Build each page by describing what's needed in plain language; the matching 1-3 skills get pulled in automatically.
-4. Layer in polish (borders, shadows, blur) once structure and content are locked, not before.
+1. Run `site-build-kickoff` first — it walks through the brief, page inventory, and produces a plan of which skills below apply where.
+2. Within that: `spec-driven-ui-prompting` locks the design brief once; pick one visual theme and one structural layout from the "pick ONE" group as the site-wide system.
+3. Build each page (and the shared header/footer/forms/loading states) by describing what's needed in plain language; the matching 1-3 skills get pulled in automatically.
+4. Layer in situational polish (borders, shadows, blur) once structure and content are locked, not before.
