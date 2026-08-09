@@ -119,4 +119,4 @@ Not every skill applies to every site — most are alternatives to each other or
 
 ## Credits
 
-Several of these skills started as adaptations of [MengTo/Skills](https://github.com/MengTo/Skills) (MIT licensed) and were rewritten/reorganized for this library. See [LICENSE](LICENSE).
+Several of these skills started as adaptations of [MengTo/Skills](https://github.com/MengTo/Skills) (MIT licensed) and were rewritten/reorganized for this library. See [NOTICE.md](NOTICE.md) for the required upstream license text.
